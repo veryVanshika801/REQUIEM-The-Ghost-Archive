@@ -1,8 +1,8 @@
 {
   "name": "REQUIEM — The Ghost Archive",
   "description": "An open-weight AI experiment in digital archaeology. Recover the intent, trace the unfinished, and give forgotten code another life.",
-  "permissions": [],
-  "capabilities": [
+  "requestFramePermissions": [],
+  "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]
 }

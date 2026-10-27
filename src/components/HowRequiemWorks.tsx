@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Search, Cpu, Compass, CheckCircle2, ArrowRight } from 'lucide-react';
+import ancientVaultImg from '../assets/images/ancient_archive_vault_1793105368236.jpg';
 
 export const HowRequiemWorks: React.FC = () => {
   const [activeStage, setActiveStage] = useState(0);
+  const [imgSrc, setImgSrc] = useState<string>(ancientVaultImg || '/images/ancient-vault.jpg');
 
   const stages = [
     {
@@ -39,7 +41,8 @@ export const HowRequiemWorks: React.FC = () => {
       {/* Background visual asset: Ancient Archive Vault */}
       <div className="absolute inset-0 opacity-15 pointer-events-none mix-blend-luminosity overflow-hidden">
         <img
-          src="/src/assets/images/ancient_archive_vault_1793105368236.jpg"
+          src={imgSrc}
+          onError={() => setImgSrc('/images/ancient-vault.jpg')}
           alt="Ancient vault archive cathedral"
           className="w-full h-full object-cover"
           loading="lazy"

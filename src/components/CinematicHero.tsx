@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDown, Compass, Sparkles } from 'lucide-react';
+import heroGhostImg from '../assets/images/hero_archivist_archive_1793105367632.jpg';
 
 interface CinematicHeroProps {
   onEnterArchive: () => void;
@@ -11,6 +12,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
   onExploreExperience
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [imgSrc, setImgSrc] = useState<string>(heroGhostImg || '/images/hero-ghost.jpg');
 
   // Subtle floating ember/dust particle canvas
   useEffect(() => {
@@ -80,19 +82,20 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
       {/* Background Hero Artwork (Dominates Right Half, moody dark gradient on Left) */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img
-          src="/src/assets/images/hero_archivist_archive_1793105367632.jpg"
+          src={imgSrc}
+          onError={() => setImgSrc('/images/hero-ghost.jpg')}
           alt="The Digital Archivist overlooking the ancient codex towers during a violet storm"
-          className="w-full h-full object-cover object-right md:object-[75%_center] opacity-85 select-none"
+          className="w-full h-full object-cover object-right md:object-[80%_center] opacity-90 select-none transition-opacity duration-700"
           loading="eager"
           referrerPolicy="no-referrer"
         />
 
         {/* Cinematic Atmospheric Gradient Masks */}
         {/* Left deep dark vignette for supreme typography legibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#080712] via-[#080712]/80 to-transparent w-full md:w-[65%]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#080712] via-[#080712]/85 to-transparent w-full md:w-[68%]" />
         
         {/* Bottom fade into section 2 */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#080712] via-[#080712]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#080712] via-[#080712]/70 to-transparent" />
         
         {/* Top header protection */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#080712]/90 to-transparent" />
@@ -135,7 +138,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
             <button
               onClick={onEnterArchive}
-              className="px-8 py-4 text-xs sm:text-sm font-semibold tracking-widest uppercase text-white bg-gradient-to-r from-[#956BFF] to-[#5a32d6] hover:from-[#a580ff] hover:to-[#6c40e8] rounded-md shadow-[0_0_25px_rgba(149,107,255,0.45)] hover:shadow-[0_0_35px_rgba(149,107,255,0.65)] transition-all duration-300 text-center flex items-center justify-center gap-2 group"
+              className="px-8 py-4 text-xs sm:text-sm font-semibold tracking-widest uppercase text-white bg-gradient-to-r from-[#956BFF] to-[#5a32d6] hover:from-[#a580ff] hover:to-[#6c40e8] rounded-md shadow-[0_0_25px_rgba(149,107,255,0.45)] hover:shadow-[0_0_35px_rgba(149,107,255,0.65)] transition-all duration-300 text-center flex items-center justify-center gap-2 group cursor-pointer"
             >
               <span>Enter The Archive</span>
               <Sparkles className="w-4 h-4 text-[#75D8FF] group-hover:rotate-12 transition-transform" />
@@ -143,7 +146,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
 
             <button
               onClick={onExploreExperience}
-              className="px-7 py-4 text-xs sm:text-sm font-medium tracking-widest uppercase text-[#ECEAF5] hover:text-white bg-[#17102E]/60 hover:bg-[#17102E] border border-[#30215B] hover:border-[#956BFF]/60 rounded-md transition-all duration-300 text-center flex items-center justify-center gap-2"
+              className="px-7 py-4 text-xs sm:text-sm font-medium tracking-widest uppercase text-[#ECEAF5] hover:text-white bg-[#17102E]/60 hover:bg-[#17102E] border border-[#30215B] hover:border-[#956BFF]/60 rounded-md transition-all duration-300 text-center flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Explore The Experience</span>
               <Compass className="w-4 h-4 text-[#A8A4B8]" />

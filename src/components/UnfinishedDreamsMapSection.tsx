@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Network, ZoomIn, ZoomOut, RotateCcw, List, Layers, ShieldCheck, AlertTriangle, HelpCircle, FileText } from 'lucide-react';
 import { DreamNode, DreamEdge, DreamNodeType, DreamNodeStatus } from '../types/archive';
+import reconstructionCodexImg from '../assets/images/reconstruction_codex_1793105369521.jpg';
 
 interface UnfinishedDreamsMapSectionProps {
   nodes: DreamNode[];
@@ -15,6 +16,7 @@ export const UnfinishedDreamsMapSection: React.FC<UnfinishedDreamsMapSectionProp
   const [activeFilter, setActiveFilter] = useState<DreamNodeType | 'all'>('all');
   const [viewMode, setViewMode] = useState<'graph' | 'list'>('graph');
   const [zoomLevel, setZoomLevel] = useState<number>(1);
+  const [imgSrc, setImgSrc] = useState<string>(reconstructionCodexImg || '/images/codex-hologram.jpg');
 
   const selectedNode = nodes.find(n => n.id === selectedNodeId) || null;
 
@@ -139,7 +141,8 @@ export const UnfinishedDreamsMapSection: React.FC<UnfinishedDreamsMapSectionProp
             {/* Background Holographic Codex Asset */}
             <div className="absolute right-0 bottom-0 w-80 h-80 opacity-15 pointer-events-none mix-blend-screen">
               <img
-                src="/src/assets/images/reconstruction_codex_1793105369521.jpg"
+                src={imgSrc}
+                onError={() => setImgSrc('/images/codex-hologram.jpg')}
                 alt="Codex Hologram"
                 className="w-full h-full object-contain"
                 loading="lazy"

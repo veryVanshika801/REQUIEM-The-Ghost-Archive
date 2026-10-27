@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Sparkles, Compass } from 'lucide-react';
+import heroGhostImg from '../assets/images/hero_archivist_archive_1793105367632.jpg';
 
 interface FinalCtaSectionProps {
   onBeginInvestigation: () => void;
@@ -10,12 +11,15 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({
   onBeginInvestigation,
   onExploreSample
 }) => {
+  const [imgSrc, setImgSrc] = useState<string>(heroGhostImg || '/images/hero-ghost.jpg');
+
   return (
     <section className="relative py-32 bg-[#080712] overflow-hidden border-t border-[#17102E] flex items-center justify-center text-center">
       {/* Background artwork overlay */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <img
-          src="/src/assets/images/hero_archivist_archive_1793105367632.jpg"
+          src={imgSrc}
+          onError={() => setImgSrc('/images/hero-ghost.jpg')}
           alt="Archivist in the storm"
           className="w-full h-full object-cover"
           loading="lazy"

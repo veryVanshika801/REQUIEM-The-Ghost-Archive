@@ -217,6 +217,21 @@ export const ModelSettingsModal: React.FC<ModelSettingsModalProps> = ({ isOpen, 
               <strong className="text-[#ECEAF5]">Security Guarantee:</strong> API keys remain stored exclusively in server-side process environment variables. Keys are never rendered into browser HTML or client JavaScript.
             </div>
           </div>
+
+          {/* Vercel Environment Variables Guide */}
+          <div className="p-3.5 rounded bg-[#17102E]/60 border border-[#956BFF]/40 text-xs font-mono space-y-2">
+            <div className="text-[#ECEAF5] font-semibold flex items-center gap-1.5">
+              <span>▲ Vercel Production Environment Variables</span>
+            </div>
+            <p className="text-[11px] text-[#A8A4B8]">
+              In your Vercel Dashboard (<strong className="text-[#ECEAF5]">Project Settings → Environment Variables</strong>), configure:
+            </p>
+            <div className="bg-[#080712] p-2.5 rounded border border-[#30215B] text-[11px] space-y-1 text-[#ECEAF5]">
+              <div><code className="text-[#75D8FF]">GEMINI_API_KEY</code>: Your Google AI Studio API key</div>
+              <div><code className="text-[#A8A4B8]">GEMMA_API_ENDPOINT</code>: (Optional) Custom endpoint (vLLM / HuggingFace)</div>
+              <div><code className="text-[#A8A4B8]">GEMMA_MODEL_ID</code>: (Optional) e.g. <code className="text-[#ECEAF5]">google/gemma-2-9b-it</code></div>
+            </div>
+          </div>
         </div>
 
         {/* Buttons */}
