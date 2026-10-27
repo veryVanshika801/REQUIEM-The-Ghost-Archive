@@ -1,0 +1,1018 @@
+# MASTER BUILD PROMPT — REQUIEM: THE GHOST ARCHIVE
+
+Build a complete, premium, cinematic, full-stack web application named **REQUIEM — The Ghost Archive** from scratch.
+
+Do not build a generic SaaS dashboard, a basic chatbot, or a static landing page. Create an immersive, highly scrollable, fantasy-inspired digital archaeology experience with the visual quality of a premium fantasy game website.
+
+Use the supplied reference image as the primary VISUAL DIRECTION: dramatic full-screen character artwork, dark purple storm atmosphere, glowing magical energy, elegant metallic typography, deep shadows, atmospheric lighting, cinematic composition, and navigation that blends into the artwork.
+
+IMPORTANT: The fantasy character in the reference is only a visual style reference. REQUIEM must have its own original identity, artwork, symbols, and visual assets. Do not copy another game's logo, character, artwork, or trademark.
+
+The application must combine this cinematic visual identity with a genuinely useful open-weight AI project investigation tool.
+
+==================================================
+1. PRODUCT IDENTITY AND PURPOSE
+==================================================
+
+Product name: REQUIEM
+Full name: REQUIEM — The Ghost Archive
+Tagline: "Every abandoned project leaves a ghost."
+Supporting line: "Recover the intent. Trace the unfinished. Give forgotten code another life."
+
+Core purpose:
+REQUIEM investigates abandoned or unfinished software projects. It examines supplied README files, source files, documentation, and actual Git history when available. It reconstructs the project's likely purpose, identifies unfinished features, connects findings to source evidence, and creates a practical revival roadmap.
+
+The central metaphor is that forgotten code is an archaeological site and AI is the investigator uncovering the story left behind.
+
+Target users:
+- Open-source contributors
+- Developers investigating old repositories
+- Students learning software architecture
+- Maintainers reviving abandoned projects
+- Hackathon participants
+
+This project is being built for the Hacktoberfest "Ghost in the Machine" challenge.
+
+Its use of an actual open-weight model must be a core technical feature, not a decorative claim.
+
+==================================================
+2. VISUAL DIRECTION — HIGHEST PRIORITY
+==================================================
+
+The entire website must feel like entering a mysterious, ancient digital archive during a violet thunderstorm.
+
+VISUAL STYLE:
+- Cinematic dark fantasy.
+- Premium fantasy-game landing-page composition.
+- Mysterious, atmospheric, sophisticated, and immersive.
+- Dark violet, midnight indigo, black, silver, muted lavender, electric blue, and restrained antique gold.
+- Deep layered backgrounds with atmospheric depth.
+- Glowing energy particles, subtle magical symbols, drifting dust, and thin luminous lines.
+- Original fantasy-inspired archival artwork.
+- Elegant serif display typography combined with clean modern sans-serif body text.
+- Monospace typography only for code, file names, and technical evidence.
+- Beautiful gradients and subtle reflections.
+- Generous negative space.
+- Sophisticated visual storytelling throughout the page.
+
+Suggested palette:
+- Midnight black: #080712
+- Deep violet: #17102E
+- Storm purple: #30215B
+- Electric violet: #956BFF
+- Ice blue: #75D8FF
+- Silver white: #ECEAF5
+- Antique gold: #D7B878
+- Muted text: #A8A4B8
+
+Use these as starting values, not rigid limits.
+
+DO NOT:
+- Use a generic white SaaS template.
+- Use plain purple cards everywhere.
+- Make the entire interface neon.
+- Use excessive glassmorphism.
+- Add random floating cards without purpose.
+- Use a generic chatbot layout as the homepage.
+- Make the body text tiny.
+- Use excessive rounded rectangles.
+- Turn every heading into glowing text.
+- use cartoon ghosts or childish Halloween graphics.
+- use copyrighted fantasy game characters or logos.
+- sacrifice usability for visual effects.
+
+The website must look professionally art-directed rather than automatically generated from a standard template.
+
+==================================================
+3. ORIGINAL CINEMATIC ART DIRECTION
+==================================================
+
+Create an original visual identity inspired by the composition of the supplied reference.
+
+HERO ARTWORK:
+A mysterious digital archivist or hooded, faceless silhouette stands on the RIGHT side of a vast ancient archive. The figure is surrounded by flowing silver-blue energy, floating fragments of luminous code, drifting ash, and subtle violet lightning.
+
+Behind the figure:
+- Vast shadowy architectural structures.
+- Mysterious archive towers.
+- A distant storm-filled violet sky.
+- Thin luminous trails connecting fragments of forgotten digital records.
+- Subtle glowing particles moving at different depths.
+
+The LEFT side should remain relatively dark and uncluttered so the main title can be read clearly.
+
+The artwork should have cinematic depth, premium fantasy concept-art quality, realistic dramatic lighting, elegant detailing, and a restrained color palette.
+
+The figure must be original, not a recreation of the character in the reference image.
+
+The hero should feel like a game cinematic, not a conventional business website banner.
+
+Use a high-quality generated or otherwise appropriately licensed background image. Keep text and interactive controls as real HTML elements above the artwork.
+
+If a suitable image asset is not available, generate or create an original asset. Do not use broken image URLs or random unrelated stock images.
+
+==================================================
+4. EXTREMELY IMPORTANT: THE WEBSITE MUST BE LONG AND SCROLLABLE
+==================================================
+
+The website must be a substantial, multi-section, vertically scrollable experience.
+
+Do not put everything inside the first viewport.
+
+Create a long homepage with at least these sections, in this exact order:
+
+SECTION 1 — CINEMATIC HERO
+SECTION 2 — THE LOST ARCHIVE / PROBLEM STORY
+SECTION 3 — HOW REQUIEM WORKS
+SECTION 4 — ENTER THE ARCHIVE / INTERACTIVE DEMO
+SECTION 5 — PROJECT AUTOPSY
+SECTION 6 — THE GHOST TIMELINE
+SECTION 7 — THE EVIDENCE VAULT
+SECTION 8 — THE UNFINISHED DREAMS MAP
+SECTION 9 — THE REVIVAL BLUEPRINT
+SECTION 10 — WHY OPEN-WEIGHT AI MATTERS
+SECTION 11 — PRIVACY, COPYRIGHT AND TRUST
+SECTION 12 — FINAL CALL TO ACTION
+SECTION 13 — EXTENSIVE FOOTER
+
+Every section must have its own visual composition, content, animations, and purpose.
+
+The page should be long enough that users must meaningfully scroll through the experience.
+
+Alternate between:
+- Full-screen cinematic scenes.
+- Wide editorial storytelling sections.
+- Asymmetric image-and-text layouts.
+- Interactive technical demonstrations.
+- Full-width visual transitions.
+- Dark evidence panels.
+- Large typography and spacious layouts.
+
+Use scroll-triggered reveals, parallax backgrounds, subtle zoom effects, animated lines, and staggered content entrances.
+
+Do not make every section look the same.
+
+Desktop hero: approximately 90–100svh.
+Other sections: variable heights based on content, with generous vertical padding.
+Ensure the overall page has a substantial length rather than a short one-page mockup.
+
+The page must open at the TOP when loaded or refreshed. Never start the user halfway down the page.
+
+Add a discreet scroll-progress indicator or elegant section navigation so users understand how far they have travelled.
+
+==================================================
+5. SECTION 1 — CINEMATIC HERO
+==================================================
+
+Create a dramatic full-screen landing section.
+
+NAVIGATION:
+- Original REQUIEM logo on the top-left.
+- Navigation links: Home, The Archive, How It Works, Open-Source AI.
+- Top-right links: Sign In and Create Account.
+- The navigation should sit transparently over the artwork.
+- On scroll, transition into a restrained dark background with a subtle blur.
+- Navigation items must scroll to the correct sections.
+- Use a responsive mobile navigation menu.
+
+HERO COMPOSITION:
+- Artwork dominates the RIGHT half.
+- The LEFT half contains the main text.
+- Use a dark overlay behind text when needed for readability.
+- Add subtle lightning, particles, or moving energy in the background.
+- The logo must remain visible over the artwork.
+
+HEADLINE:
+"EVERY ABANDONED
+PROJECT LEAVES A GHOST."
+
+Supporting copy:
+"Somewhere inside forgotten code, a story remains unfinished. REQUIEM uncovers the evidence, reconstructs the intent, and reveals what can live again."
+
+Primary CTA: "ENTER THE ARCHIVE"
+Secondary CTA: "EXPLORE THE EXPERIENCE"
+
+Below the buttons, add a restrained line:
+"AN OPEN-WEIGHT AI EXPERIMENT IN DIGITAL ARCHAEOLOGY"
+
+The primary button must open the investigation flow or dashboard. The secondary button must scroll smoothly to the next section.
+
+Add a subtle animated scroll indicator near the bottom.
+
+Do not put login forms, large feature cards, or a dashboard inside the hero.
+
+==================================================
+6. SECTION 2 — THE LOST ARCHIVE
+==================================================
+
+Tell the story behind the problem.
+
+Headline:
+"NOT EVERY ENDING WAS INTENDED."
+
+Show a dramatic sequence of abandoned source files, unfinished documentation, disconnected modules, and faded project records.
+
+Use a large editorial layout with animated text and visual layers.
+
+Explain:
+- Projects become abandoned.
+- Original context disappears.
+- Contributors lose track of unfinished ideas.
+- Documentation becomes outdated.
+- Useful open-source tools disappear from active development.
+
+Present three visual observations:
+1. The intent remains buried.
+2. The evidence becomes scattered.
+3. The next step becomes uncertain.
+
+Use original illustrations, subtle code fragments, and animated connecting lines.
+
+The content should be concise, meaningful, and readable.
+
+==================================================
+7. SECTION 3 — HOW REQUIEM WORKS
+==================================================
+
+Build a visually rich, scroll-triggered three-stage sequence.
+
+STAGE 01 — DISCOVER
+"Bring the forgotten project into the light."
+
+Explain that the user supplies project files or connects an eligible repository.
+
+STAGE 02 — RECONSTRUCT
+"Follow the evidence left behind."
+
+Explain that the model analyses available documentation and source code, then identifies facts, inferences, and missing information.
+
+STAGE 03 — REVIVE
+"Give the unfinished a next chapter."
+
+Explain that the application produces an evidence-backed project report and actionable revival plan.
+
+Animate the three stages as the user scrolls through them.
+
+Use connected glowing lines, sequentially illuminated numbers, and original archival imagery.
+
+Each stage should reveal more of a continuous visual journey.
+
+==================================================
+8. SECTION 4 — ENTER THE ARCHIVE
+==================================================
+
+Transition from the cinematic marketing experience into the functional application.
+
+Headline:
+"THE ARCHIVE IS WAITING."
+
+Description:
+"Begin with a forgotten project or explore a reconstructed sample case."
+
+Provide two prominent actions:
+
+A. INVESTIGATE A PROJECT
+Opens the project investigation workflow.
+
+B. EXPLORE A SAMPLE CASE
+Opens a fully functional preloaded demonstration that does not require an account or API key.
+
+Include a visually appealing archive entrance, subtle particles, and a clear explanation of what happens next.
+
+The sample case must be clearly labelled as demonstration data unless its contents have actually been analysed by the configured model.
+
+Do not fabricate successful model inference or claim that a sample was scanned live if it was not.
+
+==================================================
+9. AUTHENTICATION AND ONBOARDING
+==================================================
+
+Implement a coherent account flow.
+
+SIGN-IN PAGE:
+- Same dark fantasy identity, but simpler and more usable.
+- REQUIEM logo.
+- Welcome headline: "RETURN TO THE ARCHIVE."
+- Google sign-in using properly configured authentication, if implemented.
+- Email authentication only if a secure, complete implementation is provided.
+- Guest demo button.
+- Link to create an account.
+- Link to the privacy policy and terms.
+- Clear loading, success, and error states.
+
+CREATE-ACCOUNT PAGE:
+- Name and required account fields.
+- Proper validation.
+- Secure authentication provider.
+- Consent and privacy disclosures where appropriate.
+- Link back to sign in.
+
+PASSWORD RESET:
+Only include if email/password authentication is actually implemented.
+
+Do not build fake authentication or store plaintext passwords.
+
+For a hackathon MVP, prioritize a fully working guest experience. Authentication must not block judges from exploring the project.
+
+FIRST-TIME ONBOARDING:
+1. Explain what REQUIEM investigates.
+2. Explain what data is uploaded and where it is processed.
+3. Explain the limitations of AI-generated conclusions.
+
+Allow users to continue to the dashboard after onboarding.
+
+==================================================
+10. MAIN DASHBOARD — THE ARCHIVE CHAMBER
+==================================================
+
+After sign-in or guest entry, show a functional investigation workspace.
+
+Keep the cinematic branding, but reduce visual effects so technical information remains readable.
+
+Use:
+- A restrained collapsible sidebar.
+- A clear top bar.
+- A large central work area.
+- Readable typography.
+- Subtle violet and blue highlights.
+- Purposeful transitions.
+- No unnecessary decorative cards.
+
+SIDEBAR:
+- Dashboard
+- New Investigation
+- Recent Cases
+- Saved Reports
+- Model Settings
+- Privacy & Licences
+- Account Settings
+
+DASHBOARD CONTENT:
+- Greeting: "THE ARCHIVE REMEMBERS."
+- New Investigation button.
+- Explore Sample Case button.
+- Recent investigation list.
+- Project name and analysis status.
+- Last updated timestamp when actually available.
+- Search and sort controls.
+- Helpful empty state for first-time users.
+
+Every sidebar link and action must work.
+
+If persistent storage is not configured, clearly explain that investigations may not persist after refresh. Do not pretend that saved cases are permanently stored.
+
+==================================================
+11. PROJECT UPLOAD AND SETUP
+==================================================
+
+Create a complete upload screen with the same visual identity.
+
+SUPPORT:
+- README and documentation files.
+- Supported source-code files.
+- Safe, size-limited project ZIP archives.
+- A sample project.
+- Optional public repository import if a real GitHub integration is implemented.
+
+UPLOAD INTERFACE:
+- Drag-and-drop zone.
+- Browse files button.
+- File name, size, and type.
+- File count.
+- Upload progress.
+- Remove-file controls.
+- Validation errors.
+- Clear upload limits.
+
+BEFORE ANALYSIS:
+- Ask for the project name.
+- Allow an optional project description.
+- Let the user select Quick Scan or Deep Investigation.
+- Ask what they want to understand about the project.
+- Show the files that will be analysed.
+- Warn about secrets and private information.
+- Ask the user to confirm processing.
+
+Reject unsupported files, oversized archives, malicious archive paths, and unsafe file types.
+
+Never execute uploaded source code.
+
+Treat uploaded content as untrusted input and protect against prompt injection.
+
+Do not claim to retrieve commit history unless actual history is provided or successfully obtained through an integration.
+
+==================================================
+12. CORE FEATURE — PROJECT AUTOPSY
+==================================================
+
+Create an interactive investigation report.
+
+Analyse available source material to identify:
+- Project purpose.
+- Intended users.
+- Technologies and frameworks.
+- Project structure.
+- Main modules.
+- Implemented features.
+- Apparently unfinished features.
+- Missing documentation.
+- Possible technical risks.
+- Unknown or contradictory information.
+
+Use clearly separated result categories:
+
+VERIFIED EVIDENCE
+Directly supported by available files or repository history.
+
+AI INTERPRETATION
+A reasonable interpretation of available evidence.
+
+UNKNOWN
+Information that cannot be established.
+
+Every finding should include:
+- Short title.
+- Explanation.
+- Evidence reference.
+- Relevant file and line numbers when available.
+- Confidence or uncertainty explanation.
+- A button to inspect the source.
+
+Do not fabricate filenames, line numbers, commits, timestamps, dependencies, or developer intentions.
+
+If a finding lacks sufficient evidence, label it as a hypothesis or omit it.
+
+==================================================
+13. CORE FEATURE — THE GHOST TIMELINE
+==================================================
+
+Build an interactive, horizontally or vertically scrollable timeline.
+
+Show available project milestones such as:
+- Initial project structure.
+- Documentation additions.
+- Feature implementation.
+- Refactoring.
+- Missing or unfinished components.
+- Potential next steps.
+
+Separate actual historical events from AI-inferred events.
+
+Actual dated events must come from supplied or retrieved evidence.
+
+AI-inferred milestones must be visually distinguished and must not be presented as actual historical events.
+
+Clicking an event should open:
+- Event title.
+- Explanation.
+- Source evidence.
+- Date and its source, when available.
+- Uncertainty label.
+
+If Git history is unavailable, display a helpful message instead of inventing a development timeline.
+
+==================================================
+14. CORE FEATURE — THE EVIDENCE VAULT
+==================================================
+
+Create a searchable investigation panel.
+
+For each finding, show:
+- Finding title.
+- Finding category.
+- Evidence summary.
+- Actual filename.
+- Source excerpt.
+- Line range when available.
+- Confidence explanation.
+- Direct evidence versus inference.
+- Related features or timeline events.
+
+Add:
+- Search findings.
+- Filter by category.
+- Sort by relevance.
+- Open source excerpt.
+- Copy citation.
+- Mark a finding as reviewed.
+
+THE SIGNATURE INTERACTION:
+A button labelled "SHOW ME THE PROOF".
+
+When clicked, open the exact supporting source excerpt and explain what it establishes and what remains uncertain.
+
+Do not create fake citations or source references.
+
+==================================================
+15. CORE FEATURE — THE UNFINISHED DREAMS MAP
+==================================================
+
+Create a visually distinctive, interactive node graph.
+
+Possible node types:
+- Files.
+- Modules.
+- Features.
+- Dependencies.
+- Documentation.
+- Findings.
+- Proposed improvements.
+
+Use visual states for:
+- Verified.
+- Incomplete.
+- Uncertain.
+- Potentially blocked.
+
+The graph must be based on real extracted information or clearly labelled sample data.
+
+INTERACTIONS:
+- Click a node to open its detail panel.
+- Highlight connected nodes.
+- Filter by node type.
+- Zoom and pan.
+- Reset the view.
+- Show the evidence behind a connection.
+- Provide a readable list alternative for accessibility.
+
+Do not invent dependencies or assert that a missing connection proves a bug.
+
+If there is insufficient information, explain the limitation.
+
+==================================================
+16. CORE FEATURE — THE REVIVAL BLUEPRINT
+==================================================
+
+Generate a practical roadmap for reviving the project.
+
+Include:
+- Priority.
+- Task title.
+- Reason for the recommendation.
+- Supporting evidence.
+- Suggested implementation steps.
+- Expected outcome.
+- Acceptance criteria.
+- Estimated difficulty, clearly labelled as an estimate.
+- Dependencies or blockers, if verified.
+
+Suggested categories:
+- Fix first.
+- Restore documentation.
+- Add tests.
+- Complete unfinished functionality.
+- Improve architecture.
+- Good first contribution.
+
+INTERACTIONS:
+- Expand task details.
+- Copy a task.
+- Mark a task accepted, rejected, or completed.
+- Generate a draft GitHub issue.
+- Export the roadmap.
+
+Do not automatically commit code, modify external repositories, or create issues without the user's explicit action and an implemented integration.
+
+==================================================
+17. OPEN-WEIGHT AI — ACTUAL TECHNICAL IMPLEMENTATION
+==================================================
+
+The challenge requires a meaningful open-source/open-weight AI contribution.
+
+Use a real Gemma model through a supported inference provider.
+
+Do not use a closed model as a silent replacement.
+
+Build a modular server-side model adapter.
+
+REQUIRED MODEL CAPABILITIES:
+- Analyse extracted project content.
+- Identify project purpose.
+- Extract evidence-backed findings.
+- Classify verified information and hypotheses.
+- Identify unknowns.
+- Suggest unfinished features with supporting evidence.
+- Generate a revival roadmap.
+- Return structured output suitable for the interface.
+
+TECHNICAL REQUIREMENTS:
+- Keep API keys in server-side environment secrets.
+- Never expose credentials in browser JavaScript.
+- Validate model responses.
+- Handle timeouts, errors, rate limits, and invalid output.
+- Limit input size.
+- Select relevant source excerpts rather than sending arbitrary oversized repositories.
+- Keep inference cost and latency under control.
+- Display the real model identifier and provider.
+- Provide an actual connection test.
+- Clearly disclose when a model is not configured.
+
+If the model is unavailable, the preloaded sample must still be explorable.
+
+Sample data must be clearly identified as precomputed demonstration data.
+
+Do not simulate real AI inference with a fake loading animation.
+
+Do not claim that model weights run locally if inference happens on a hosted service.
+
+Include a README section documenting:
+- Model name and version.
+- Model source.
+- Inference provider.
+- Integration architecture.
+- Relevant model terms.
+- Limitations.
+- How to configure the endpoint and credentials.
+
+Do not claim that the entire application is open source simply because it uses an open-weight model.
+
+==================================================
+18. MODEL SETTINGS
+==================================================
+
+Create a functional Model Settings page.
+
+Display:
+- Model name.
+- Model version.
+- Provider.
+- Endpoint status.
+- Connection status.
+- Inference mode: hosted or local, whichever is actually implemented.
+- Supported analysis capabilities.
+- Last successful test, if genuinely available.
+- Error information without exposing secrets.
+
+Provide:
+- Test Connection.
+- Save Configuration.
+- Clear Configuration.
+- Retry.
+- Documentation link.
+
+Allow endpoint and model configuration where supported.
+
+Never render secret values back into the frontend.
+
+If no model endpoint is configured, display:
+"MODEL NOT CONNECTED — Sample cases remain available."
+
+Do not show a green Connected indicator unless a real connection test succeeds.
+
+==================================================
+19. COPYRIGHT, LICENCES AND ATTRIBUTION
+==================================================
+
+Implement a proper Copyright & Licences section.
+
+Requirements:
+- Preserve applicable source-code copyright notices.
+- Attribute third-party code and assets where required.
+- Link to original repositories and source files.
+- Detect common project licence files.
+- Display detected licences with their source.
+- Show "No licence detected" when appropriate.
+- Do not assume public code can be freely reused.
+- Include applicable third-party library notices.
+- Include required notices for the selected Gemma version.
+- Document the licence of REQUIEM's own code.
+- Document image, icon, font, and other asset licences where applicable.
+- Clearly identify AI-generated summaries.
+- Never claim ownership of user-uploaded source code.
+
+If licence detection is uncertain, mark it for manual review.
+
+Include the following pages:
+1. Privacy Policy.
+2. Terms of Use.
+3. Copyright & Licences.
+4. AI Limitations.
+5. Security & Data Handling.
+6. Open-Source Notices.
+7. Contact / Report an Issue.
+
+Legal content must match the actual implementation.
+
+Do not claim legal compliance or guaranteed privacy without the necessary implementation and review.
+
+==================================================
+20. PRIVACY AND SECURITY
+==================================================
+
+Implement sensible security protections.
+
+- Validate uploads and archive paths.
+- Never execute uploaded code.
+- Protect against prompt injection in source files.
+- Avoid logging full private source files.
+- Detect and warn about potential credentials.
+- Keep API keys server-side.
+- Restrict access to private investigations.
+- Use secure authentication if accounts are implemented.
+- Define data retention and deletion behaviour.
+- Allow users to delete saved reports where supported.
+- Disclose third-party processing.
+- Warn users before exporting sensitive content.
+- Return safe error messages.
+- Never expose internal stack traces or secrets.
+
+If storage is temporary, clearly explain that.
+
+If permanent storage is implemented, describe where data is stored and how users can delete it.
+
+Use public or synthetic sample projects for the demonstration.
+
+==================================================
+21. SAVED REPORTS AND EXPORT
+==================================================
+
+Implement:
+- Saved investigations.
+- Investigation history.
+- Search and sorting.
+- Rename and delete.
+- Report preview.
+- Markdown export.
+- PDF export if practical.
+- Copy findings.
+- Copy revival tasks.
+- Source attribution in exports.
+- Model attribution in exports.
+- Generated-at timestamp.
+- Clear distinction between evidence and inference.
+
+Do not show Save or Export controls that do nothing.
+
+If an export format is unavailable, disable it with a clear explanation.
+
+==================================================
+22. FINAL STORY SECTION — WHY OPEN AI MATTERS
+==================================================
+
+Create a visually striking section with a different composition from the earlier feature sections.
+
+Headline:
+"WHAT SURVIVES WHEN THE SERVER GOES DARK?"
+
+Explain that open-weight models can provide more flexibility over model choice, deployment, and system architecture.
+
+Discuss honestly:
+- Model inspectability and adaptability.
+- The possibility of self-hosted inference when infrastructure supports it.
+- The ability to replace providers through a modular architecture.
+- The importance of data control and deployment choices.
+- The trade-offs of hosted inference versus local operation.
+- The importance of model licences and hardware constraints.
+
+Do not claim that this particular app works offline unless offline inference is implemented.
+
+Do not claim that open-weight models guarantee privacy.
+
+Add a simple visual architecture diagram showing:
+
+User Project
+    ↓
+Safe File Extraction
+    ↓
+Evidence Selection
+    ↓
+Open-Weight Model Inference
+    ↓
+Evidence-Backed Analysis
+    ↓
+Revival Blueprint
+
+The diagram should be real and readable, not a static image pretending to be an interactive system.
+
+==================================================
+23. FINAL CALL TO ACTION
+==================================================
+
+Create an emotional, cinematic final section.
+
+Use the original archive architecture fading into a dark violet storm.
+
+Headline:
+"THE STORY DOESN'T HAVE TO END HERE."
+
+Supporting text:
+"Bring the forgotten into the light. Find the evidence. Discover what can live again."
+
+Primary button:
+"BEGIN AN INVESTIGATION"
+
+Secondary button:
+"EXPLORE THE SAMPLE"
+
+Both must work.
+
+Add a restrained glowing line or particle trail leading toward the footer.
+
+==================================================
+24. EXTENSIVE FOOTER
+==================================================
+
+Include:
+- REQUIEM logo and tagline.
+- Brief project description.
+- Home.
+- How It Works.
+- Features.
+- Open-Source AI.
+- GitHub repository link, once configured.
+- Privacy Policy.
+- Terms of Use.
+- Copyright & Licences.
+- Security & Data Handling.
+- AI Limitations.
+- Contact / Report an Issue.
+- Model attribution.
+- Copyright notice for the project's own code, using the correct year and owner.
+- Third-party attribution where required.
+
+Do not invent repository URLs, contact addresses, legal claims, or affiliations.
+
+==================================================
+25. SCROLL ANIMATIONS AND MICRO-INTERACTIONS
+==================================================
+
+The scroll experience is a major part of this project.
+
+Implement:
+- Smooth scrolling between navigation anchors.
+- Scroll-triggered fade and slide reveals.
+- Staggered headings and text.
+- Gentle background parallax.
+- Subtle artwork scale changes.
+- Animated archival lines.
+- Progressive timeline illumination.
+- Evidence connections that appear when relevant.
+- A restrained scroll-progress indicator.
+- Hover states for buttons and navigation.
+- Subtle magnetic or luminous button effects only if performant.
+- Section transitions that feel cinematic.
+- Responsive menu animations.
+
+PERFORMANCE AND ACCESSIBILITY:
+- Respect prefers-reduced-motion.
+- Avoid excessive continuous animations.
+- Keep controls accessible by keyboard.
+- Maintain readable contrast.
+- Keep text readable while effects are running.
+- Do not block scrolling with forced full-screen animations.
+- Do not use scroll hijacking.
+- Avoid layout shifts when images load.
+- Lazy-load lower-page artwork.
+- Ensure the page works on ordinary laptops and mobile devices.
+
+The user must be able to scroll naturally through the entire page.
+
+==================================================
+26. TECHNICAL IMPLEMENTATION
+==================================================
+
+Build a real full-stack application, not a collection of static mockups.
+
+Preferred stack:
+- React.
+- TypeScript.
+- CSS or a well-supported styling system.
+- Reusable UI components.
+- Server-side API endpoints.
+- Secure environment variables.
+- A real model integration.
+- Persistent storage only where properly configured.
+
+Organize code into reusable components such as:
+- Navbar.
+- CinematicHero.
+- StorySection.
+- ScrollReveal.
+- FeatureSection.
+- ArchiveDashboard.
+- ProjectUploader.
+- InvestigationWorkspace.
+- ProjectAutopsy.
+- GhostTimeline.
+- EvidenceVault.
+- DreamsMap.
+- RevivalBlueprint.
+- ModelSettings.
+- PrivacyPages.
+- Footer.
+
+Keep the homepage, authentication, dashboard, and investigation workspace as distinct routes or coherent views.
+
+Use proper routing and ensure refresh works on every public route.
+
+Keep API credentials out of the client.
+
+Avoid unnecessary dependencies.
+
+Use semantic HTML and accessible controls.
+
+Add loading, error, empty, success, and disconnected states.
+
+Make the application easy to deploy using the platform's supported deployment workflow.
+
+Do not assume a particular hosting platform supports every backend feature without checking its requirements.
+
+==================================================
+27. REQUIRED FUNCTIONALITY RULE
+==================================================
+
+Every visible interactive element must perform the action it advertises.
+
+Specifically test:
+- Navigation.
+- Scroll links.
+- Sign-in and guest entry.
+- Create account.
+- Upload.
+- Remove file.
+- Start investigation.
+- Cancel investigation.
+- Retry.
+- Open finding.
+- Show Me the Proof.
+- Timeline interactions.
+- Graph interactions.
+- Search and filtering.
+- Save report.
+- Export report.
+- Delete investigation.
+- Test model connection.
+- Save settings.
+- Footer links.
+- Mobile menu.
+
+Do not use:
+- Fake success messages.
+- Fake connected states.
+- Random generated source references.
+- Fake GitHub history.
+- Placeholder buttons.
+- Dead icons.
+- Unfinished navigation.
+- Fake loading that hides a nonfunctional backend.
+
+If a feature cannot be fully implemented, label it as unavailable or not yet configured.
+
+==================================================
+28. REQUIRED BUILD ORDER
+==================================================
+
+Implement the application in the following order:
+
+PHASE 1:
+Build the complete cinematic homepage with all thirteen sections, original visual identity, responsive navigation, and smooth natural scrolling.
+
+PHASE 2:
+Implement the sign-in experience, guest entry, dashboard, and sample investigation.
+
+PHASE 3:
+Implement safe uploads, source extraction, and the actual Gemma inference adapter.
+
+PHASE 4:
+Implement Project Autopsy, evidence references, Ghost Timeline, Unfinished Dreams Map, and Revival Blueprint.
+
+PHASE 5:
+Implement saved reports, exports, model settings, copyright notices, privacy information, and error handling.
+
+PHASE 6:
+Test every interaction, fix broken controls, improve responsive behaviour, and verify the actual deployment.
+
+Prioritize a coherent working end-to-end journey over superficial feature count.
+
+==================================================
+29. FINAL QUALITY BAR
+==================================================
+
+Before considering the project complete, verify that:
+
+1. The homepage resembles a premium cinematic fantasy-game website.
+2. The hero artwork dominates the first viewport.
+3. The typography is elegant and readable.
+4. The page is substantially scrollable, with thirteen distinct sections.
+5. Scrolling reveals purposeful animations and different compositions.
+6. Navigation and buttons work.
+7. Guest users can explore the sample without registering.
+8. Uploaded files are handled safely.
+9. The configured open-weight model actually powers real analysis.
+10. Findings link to actual evidence where available.
+11. Historical facts and AI inferences are clearly separated.
+12. The interactive timeline and node graph work.
+13. The revival plan is useful.
+14. Copyright and model licences are documented accurately.
+15. Privacy claims match the implementation.
+16. Secrets remain server-side.
+17. The website works on laptop and mobile.
+18. The project has no fake features or fabricated evidence.
+19. The page opens at the top.
+20. The final result feels like one coherent, premium product.
+
+Start building the application now.
+
+First establish the original cinematic art direction and the complete long-scroll homepage. Then implement the functional application behind it.
+
+Do not respond with a plan or a tutorial. Generate and implement the actual application and its components.

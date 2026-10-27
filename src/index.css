@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080712;
+    color: #ECEAF5;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-cinzel);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080712;
+}
+::-webkit-scrollbar-thumb {
+  background: #30215B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #956BFF;
+}
+
+/* Atmospheric effects */
+.violet-gradient-radial {
+  background: radial-gradient(circle at 50% 50%, rgba(149, 107, 255, 0.15) 0%, rgba(48, 33, 91, 0.08) 50%, transparent 80%);
+}
+
+.storm-vignette {
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(8, 7, 18, 0.95) 95%);
+}
+
+.glow-border {
+  border: 1px solid rgba(149, 107, 255, 0.25);
+  box-shadow: 0 0 25px -5px rgba(149, 107, 255, 0.15);
+}
+
+.glow-gold {
+  border: 1px solid rgba(215, 184, 120, 0.3);
+  box-shadow: 0 0 20px -5px rgba(215, 184, 120, 0.15);
+}
+
+.glow-text-violet {
+  text-shadow: 0 0 20px rgba(149, 107, 255, 0.6);
+}
+
+.glow-text-blue {
+  text-shadow: 0 0 20px rgba(117, 216, 255, 0.6);
+}
+
+/* Subtle pulse animations */
+@keyframes atmosphericPulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.03); }
+}
+
+.animate-atmospheric {
+  animation: atmosphericPulse 8s ease-in-out infinite;
+}
+
+@keyframes lightningFlicker {
+  0%, 93%, 98% { opacity: 0; }
+  94%, 97% { opacity: 0.22; }
+  95% { opacity: 0.5; }
+}
+
+.animate-lightning {
+  animation: lightningFlicker 14s infinite;
+}
