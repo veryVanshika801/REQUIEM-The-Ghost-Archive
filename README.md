@@ -12,9 +12,9 @@ REQUIEM is an open-weight AI digital archaeology platform engineered to investig
 ## 🏛️ Archaeological Visual Identity
 
 REQUIEM is designed with the atmospheric depth of a cinematic dark fantasy game archive during a violet thunderstorm:
-- **Palette:** Midnight black (`#080712`), Deep violet (`#17102E`), Storm purple (`#30215B`), Electric violet (`#956BFF`), Ice blue (`#75D8FF`), and Antique gold (`#D7B878`).
-- **Typography:** Refined display serifs paired with Plus Jakarta Sans body prose and JetBrains Mono for forensic code lines.
-- **Atmosphere:** Dynamic dust/ember particle canvas, ambient violet lightning flashes, and subtle holographic codices.
+- *Palette:*Midnight black (`#080712`), Deep violet (`#17102E`), Storm purple (`#30215B`), Electric violet (`#956BFF`), Ice blue (`#75D8FF`), and Antique gold (`#D7B878`).
+- *Typography:* Refined display serifs paired with Plus Jakarta Sans body prose and JetBrains Mono for forensic code lines.
+- *Atmosphere:*Dynamic dust/ember particle canvas, ambient violet lightning flashes, and subtle holographic codices.
 
 ---
 
